@@ -1,0 +1,12 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/Oleg/developer/vw/client-cpp/build/cmake_install.cmake",
+		"C:/Users/Oleg/developer/vw/client-cpp/build/libs/glfw-3.4/cmake_install.cmake",
+		"C:/Users/Oleg/developer/vw/client-cpp/build/libs/glfw-3.4/src/cmake_install.cmake",
+		"C:/Users/Oleg/developer/vw/client-cpp/build/libs/glfw-3.4/docs/cmake_install.cmake",
+		"C:/Users/Oleg/developer/vw/client-cpp/build/libs/glad/cmake_install.cmake",
+		"C:/Users/Oleg/developer/vw/client-cpp/build/libs/glm/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
