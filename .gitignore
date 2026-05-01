@@ -1,1 +1,3 @@
 .vscode
+.cache/
+client-cpp/.cache/
