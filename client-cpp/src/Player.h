@@ -5,7 +5,6 @@
 #include <memory>
 #include "Camera.h"
 #include "models/Cube.h"
-#include "Material.h"
 
 class Player {
   public:

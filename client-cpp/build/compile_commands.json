@@ -13,12 +13,6 @@
 },
 {
   "directory": "C:/Users/Oleg/developer/vw/client-cpp/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DASIO_STANDALONE -D_WIN32_WINNT=0x0601 -IC:/Users/Oleg/developer/vw/client-cpp/libs/asio/include -IC:/Users/Oleg/developer/vw/client-cpp/src -IC:/Users/Oleg/developer/vw/client-cpp/libs/glad/include -IC:/Users/Oleg/developer/vw/client-cpp/libs/glfw-3.4/include -IC:/Users/Oleg/developer/vw/client-cpp/libs/glm/include -IC:/Users/Oleg/developer/vw/client-cpp/libs/glm -std=gnu++17 -o CMakeFiles\\app.dir\\src\\ShadowMap.cpp.obj -c C:\\Users\\Oleg\\developer\\vw\\client-cpp\\src\\ShadowMap.cpp",
-  "file": "C:\\Users\\Oleg\\developer\\vw\\client-cpp\\src\\ShadowMap.cpp",
-  "output": "CMakeFiles\\app.dir\\src\\ShadowMap.cpp.obj"
-},
-{
-  "directory": "C:/Users/Oleg/developer/vw/client-cpp/build",
   "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DASIO_STANDALONE -D_WIN32_WINNT=0x0601 -IC:/Users/Oleg/developer/vw/client-cpp/libs/asio/include -IC:/Users/Oleg/developer/vw/client-cpp/src -IC:/Users/Oleg/developer/vw/client-cpp/libs/glad/include -IC:/Users/Oleg/developer/vw/client-cpp/libs/glfw-3.4/include -IC:/Users/Oleg/developer/vw/client-cpp/libs/glm/include -IC:/Users/Oleg/developer/vw/client-cpp/libs/glm -std=gnu++17 -o CMakeFiles\\app.dir\\src\\Material.cpp.obj -c C:\\Users\\Oleg\\developer\\vw\\client-cpp\\src\\Material.cpp",
   "file": "C:\\Users\\Oleg\\developer\\vw\\client-cpp\\src\\Material.cpp",
   "output": "CMakeFiles\\app.dir\\src\\Material.cpp.obj"
@@ -70,6 +64,12 @@
   "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DASIO_STANDALONE -D_WIN32_WINNT=0x0601 -IC:/Users/Oleg/developer/vw/client-cpp/libs/asio/include -IC:/Users/Oleg/developer/vw/client-cpp/src -IC:/Users/Oleg/developer/vw/client-cpp/libs/glad/include -IC:/Users/Oleg/developer/vw/client-cpp/libs/glfw-3.4/include -IC:/Users/Oleg/developer/vw/client-cpp/libs/glm/include -IC:/Users/Oleg/developer/vw/client-cpp/libs/glm -std=gnu++17 -o CMakeFiles\\app.dir\\src\\net\\ClientUdp.cpp.obj -c C:\\Users\\Oleg\\developer\\vw\\client-cpp\\src\\net\\ClientUdp.cpp",
   "file": "C:\\Users\\Oleg\\developer\\vw\\client-cpp\\src\\net\\ClientUdp.cpp",
   "output": "CMakeFiles\\app.dir\\src\\net\\ClientUdp.cpp.obj"
+},
+{
+  "directory": "C:/Users/Oleg/developer/vw/client-cpp/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DASIO_STANDALONE -D_WIN32_WINNT=0x0601 -IC:/Users/Oleg/developer/vw/client-cpp/libs/asio/include -IC:/Users/Oleg/developer/vw/client-cpp/src -IC:/Users/Oleg/developer/vw/client-cpp/libs/glad/include -IC:/Users/Oleg/developer/vw/client-cpp/libs/glfw-3.4/include -IC:/Users/Oleg/developer/vw/client-cpp/libs/glm/include -IC:/Users/Oleg/developer/vw/client-cpp/libs/glm -std=gnu++17 -o CMakeFiles\\app.dir\\src\\net\\Friend.cpp.obj -c C:\\Users\\Oleg\\developer\\vw\\client-cpp\\src\\net\\Friend.cpp",
+  "file": "C:\\Users\\Oleg\\developer\\vw\\client-cpp\\src\\net\\Friend.cpp",
+  "output": "CMakeFiles\\app.dir\\src\\net\\Friend.cpp.obj"
 },
 {
   "directory": "C:/Users/Oleg/developer/vw/client-cpp/build",

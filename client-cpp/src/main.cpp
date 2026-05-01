@@ -13,10 +13,8 @@
 #include "Material.h"
 #include "Shader.h"
 #include "net/ClientUdp.h"
-// #include "ShadowMap.h"
 #include "models/Cube.h"
 #include "models/Plane.h"
-#include "models/Pyramid.h"
 
 void framebuffer_size_callback(GLFWwindow *window, int width, int height) { glViewport(0, 0, width, height); }
 
@@ -84,6 +82,9 @@ int main() {
     Cube cube(Material::emerald);
     player.initModel();
 
+    std::vector<Friend> local_friends;
+    local_friends.reserve(32);
+
     ClientUdp client("127.0.0.1", "8080");
 
     client.async_send();
@@ -104,12 +105,14 @@ int main() {
 
         processInput(window, deltaTime);
 
+        client.update_packet(camera->Position);
+
+        client.allocFriends(local_friends);
+
         glm::mat4 projection = glm::perspective(
             glm::radians(camera->Zoom), static_cast<float>(SCR_WIDTH) / static_cast<float>(SCR_HEIGHT), 0.1f, 100.0f);
 
         glm::mat4 view = camera->GetViewMatrix();
-
-        /////////////////////////////////////////////////////
 
         glm::mat4 lightProjection, lightView;
         glm::mat4 lightSpaceMatrix;
@@ -117,18 +120,6 @@ int main() {
         lightProjection = glm::ortho(-10.0f, 10.0f, -10.0f, 10.0f, near_plane, far_plane);
         lightView = glm::lookAt(-dirLight.direction * 5.0f, glm::vec3(0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
         lightSpaceMatrix = lightProjection * lightView;
-
-        // depthShader.use();
-        // depthShader.setMat4("lightSpaceMatrix", lightSpaceMatrix);
-
-        // shadowMap.bind();
-        // glCullFace(GL_FRONT);
-        // cube.render(depthShader);
-        // plane.render(depthShader);
-        // glCullFace(GL_BACK);
-        // shadowMap.unbind();
-
-        /////////////////////////////////////////////////////
 
         shader.use();
         shader.setMat4("view", view);
@@ -139,15 +130,18 @@ int main() {
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         shader.setMat4("lightSpaceMatrix", lightSpaceMatrix);
-        // shader.setInt("shadowMap", 1);
-
-        // glActiveTexture(GL_TEXTURE1);
-        // glBindTexture(GL_TEXTURE_2D, shadowMap.depthMap);
 
         dirLight.render(shader);
-        cube.render(shader);
+        // cube.render(shader);
         plane.render(shader);
-        player.render(shader);
+        // player.render(shader);
+
+        for (auto &f : local_friends) {
+            if (f.id != client.getMyId()) {
+                cube.change_position(f.getPos());
+                cube.render(shader);
+            }
+        }
 
         glfwSwapBuffers(window);
         glfwPollEvents();

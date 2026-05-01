@@ -18,6 +18,7 @@ class Model {
 
   protected:
     unsigned int VAO = 0, VBO = 0;
+
     glm::vec3 pos;
     glm::vec3 size;
     int vertexCount = 0;

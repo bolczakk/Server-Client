@@ -12,7 +12,6 @@ add_subdirectory(libs/glm)
 add_executable(app 
     src/main.cpp 
     src/Shader.cpp 
-    src/ShadowMap.cpp 
     src/Material.cpp 
     src/Light.cpp
     src/Player.cpp
@@ -22,6 +21,7 @@ add_executable(app
     src/models/Pyramid.cpp 
     src/Camera.cpp
     src/net/ClientUdp.cpp
+    src/net/Friend.cpp
 )
 
 target_compile_definitions(app PRIVATE ASIO_STANDALONE)
@@ -44,4 +44,8 @@ endif()
 
 if(WIN32)
     target_link_libraries(app PRIVATE ws2_32 mswsock)
+endif()
+
+if(WIN32 AND CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
+    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -static -static-libgcc -static-libstdc++")
 endif()

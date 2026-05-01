@@ -60,14 +60,6 @@ build CMakeFiles/app.dir/src/Shader.cpp.obj: CXX_COMPILER__app_unscanned_ C$:/Us
   OBJECT_DIR = CMakeFiles\app.dir
   OBJECT_FILE_DIR = CMakeFiles\app.dir\src
 
-build CMakeFiles/app.dir/src/ShadowMap.cpp.obj: CXX_COMPILER__app_unscanned_ C$:/Users/Oleg/developer/vw/client-cpp/src/ShadowMap.cpp || cmake_object_order_depends_target_app
-  DEFINES = -DASIO_STANDALONE -D_WIN32_WINNT=0x0601
-  DEP_FILE = CMakeFiles\app.dir\src\ShadowMap.cpp.obj.d
-  FLAGS = -std=gnu++17
-  INCLUDES = -IC:/Users/Oleg/developer/vw/client-cpp/libs/asio/include -IC:/Users/Oleg/developer/vw/client-cpp/src -IC:/Users/Oleg/developer/vw/client-cpp/libs/glad/include -IC:/Users/Oleg/developer/vw/client-cpp/libs/glfw-3.4/include -IC:/Users/Oleg/developer/vw/client-cpp/libs/glm/include -IC:/Users/Oleg/developer/vw/client-cpp/libs/glm
-  OBJECT_DIR = CMakeFiles\app.dir
-  OBJECT_FILE_DIR = CMakeFiles\app.dir\src
-
 build CMakeFiles/app.dir/src/Material.cpp.obj: CXX_COMPILER__app_unscanned_ C$:/Users/Oleg/developer/vw/client-cpp/src/Material.cpp || cmake_object_order_depends_target_app
   DEFINES = -DASIO_STANDALONE -D_WIN32_WINNT=0x0601
   DEP_FILE = CMakeFiles\app.dir\src\Material.cpp.obj.d
@@ -140,6 +132,14 @@ build CMakeFiles/app.dir/src/net/ClientUdp.cpp.obj: CXX_COMPILER__app_unscanned_
   OBJECT_DIR = CMakeFiles\app.dir
   OBJECT_FILE_DIR = CMakeFiles\app.dir\src\net
 
+build CMakeFiles/app.dir/src/net/Friend.cpp.obj: CXX_COMPILER__app_unscanned_ C$:/Users/Oleg/developer/vw/client-cpp/src/net/Friend.cpp || cmake_object_order_depends_target_app
+  DEFINES = -DASIO_STANDALONE -D_WIN32_WINNT=0x0601
+  DEP_FILE = CMakeFiles\app.dir\src\net\Friend.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/Oleg/developer/vw/client-cpp/libs/asio/include -IC:/Users/Oleg/developer/vw/client-cpp/src -IC:/Users/Oleg/developer/vw/client-cpp/libs/glad/include -IC:/Users/Oleg/developer/vw/client-cpp/libs/glfw-3.4/include -IC:/Users/Oleg/developer/vw/client-cpp/libs/glm/include -IC:/Users/Oleg/developer/vw/client-cpp/libs/glm
+  OBJECT_DIR = CMakeFiles\app.dir
+  OBJECT_FILE_DIR = CMakeFiles\app.dir\src\net
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target app
@@ -148,7 +148,8 @@ build CMakeFiles/app.dir/src/net/ClientUdp.cpp.obj: CXX_COMPILER__app_unscanned_
 #############################################
 # Link the executable app.exe
 
-build app.exe: CXX_EXECUTABLE_LINKER__app_ CMakeFiles/app.dir/src/main.cpp.obj CMakeFiles/app.dir/src/Shader.cpp.obj CMakeFiles/app.dir/src/ShadowMap.cpp.obj CMakeFiles/app.dir/src/Material.cpp.obj CMakeFiles/app.dir/src/Light.cpp.obj CMakeFiles/app.dir/src/Player.cpp.obj CMakeFiles/app.dir/src/models/Model.cpp.obj CMakeFiles/app.dir/src/models/Cube.cpp.obj CMakeFiles/app.dir/src/models/Plane.cpp.obj CMakeFiles/app.dir/src/models/Pyramid.cpp.obj CMakeFiles/app.dir/src/Camera.cpp.obj CMakeFiles/app.dir/src/net/ClientUdp.cpp.obj | libs/glad/libglad.a libs/glfw-3.4/src/libglfw3.a || libs/glad/libglad.a libs/glfw-3.4/src/libglfw3.a
+build app.exe: CXX_EXECUTABLE_LINKER__app_ CMakeFiles/app.dir/src/main.cpp.obj CMakeFiles/app.dir/src/Shader.cpp.obj CMakeFiles/app.dir/src/Material.cpp.obj CMakeFiles/app.dir/src/Light.cpp.obj CMakeFiles/app.dir/src/Player.cpp.obj CMakeFiles/app.dir/src/models/Model.cpp.obj CMakeFiles/app.dir/src/models/Cube.cpp.obj CMakeFiles/app.dir/src/models/Plane.cpp.obj CMakeFiles/app.dir/src/models/Pyramid.cpp.obj CMakeFiles/app.dir/src/Camera.cpp.obj CMakeFiles/app.dir/src/net/ClientUdp.cpp.obj CMakeFiles/app.dir/src/net/Friend.cpp.obj | libs/glad/libglad.a libs/glfw-3.4/src/libglfw3.a || libs/glad/libglad.a libs/glfw-3.4/src/libglfw3.a
+  LINK_FLAGS = -static -static-libgcc -static-libstdc++
   LINK_LIBRARIES = libs/glad/libglad.a  libs/glfw-3.4/src/libglfw3.a  -lws2_32  -lmswsock  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\app.dir
   POST_BUILD = cd .
