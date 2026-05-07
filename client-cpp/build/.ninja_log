@@ -34,11 +34,6 @@
 2706	4748	7993519131524982	CMakeFiles/app.dir/src/models/Plane.cpp.obj	f4e64bce6b4a69a7
 2762	4776	7993519132084973	CMakeFiles/app.dir/src/models/Pyramid.cpp.obj	cd6cfdf68970849d
 2653	4787	7993519131028451	CMakeFiles/app.dir/src/models/Cube.cpp.obj	d60d65352a12ef5b
-20	4539	7993536173888829	CMakeFiles/app.dir/src/main.cpp.obj	8177b7b4821ba93d
-2804	6962	7993519132504204	CMakeFiles/app.dir/src/net/ClientUdp.cpp.obj	6d6e8b04f359ec32
-4541	5134	7993536219117758	app.exe	4bf293526077bca3
 29	4948	7993641272438771	CMakeFiles/app.dir/src/main.cpp.obj	8177b7b4821ba93d
-34	5457	7993641272488765	CMakeFiles/app.dir/src/net/ClientUdp.cpp.obj	6d6e8b04f359ec32
-5458	6111	7993641326725255	app.exe	bf96cae1be65a48
-29	3178	7993643835437353	CMakeFiles/app.dir/src/net/ClientUdp.cpp.obj	6d6e8b04f359ec32
-3179	3531	7993643866938008	app.exe	bf96cae1be65a48
+50	12183	7994617938639300	CMakeFiles/app.dir/src/net/ClientUdp.cpp.obj	6d6e8b04f359ec32
+12185	13488	7994618059976987	app.exe	bf96cae1be65a48
